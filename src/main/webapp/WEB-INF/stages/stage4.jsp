@@ -18,5 +18,11 @@
     <br>
     <input type="submit" value="Далее"/>
 </form>
+<p> IP Адресс: ${sessionScope.ip}
+    <br>
+    Имя в игре: ${requestScope.name}
+    <br>
+    Количество игр: ${sessionScope.counter}
+</p>
 </body>
 </html>

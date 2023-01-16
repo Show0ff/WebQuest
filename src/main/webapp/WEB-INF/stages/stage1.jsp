@@ -18,6 +18,14 @@
     <br>
     <input type="submit" value="Далее" />
 </form>
-<p>IP Адресс: ${remoteAddr}</p>
+
+<form method="get" action="stat">
+<p> IP Адресс: ${sessionScope.ip}
+    <br>
+    Имя в игре: ${requestScope.name}
+    <br>
+    Количество игр: ${sessionScope.counter}
+</p>
+</form>
 </body>
 </html>
