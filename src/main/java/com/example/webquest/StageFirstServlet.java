@@ -17,10 +17,7 @@ public class StageFirstServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         response.setContentType("text/html");
 
-        statistic.getName(request);
-        statistic.getIpAddress(request);
-        statistic.getCounterOfGames(request);
-
+        statistic.getFullStatistic(request);
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/stages/stage1.jsp");
         requestDispatcher.forward(request,response);

@@ -20,7 +20,7 @@
 </form>
 <p> IP Адресс: ${sessionScope.ip}
     <br>
-    Имя в игре: ${requestScope.name}
+    Имя в игре: ${sessionScope.name}
     <br>
     Количество игр: ${sessionScope.counter}
 </p>

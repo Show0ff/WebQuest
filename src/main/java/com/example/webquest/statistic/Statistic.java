@@ -31,6 +31,6 @@ public class Statistic {
 
     public void getName(HttpServletRequest request) {
         String name = request.getParameter("name");
-        request.setAttribute("name", name);
+        request.getSession().setAttribute("name", name);
     }
 }

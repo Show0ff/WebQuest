@@ -8,8 +8,12 @@ import java.io.IOException;
 
 @WebServlet(name = "StageThreeServlet", value = "/stageThree")
 public class StageThreeServlet extends HttpServlet {
+
+    private final QuestRedirect questRedirect = new QuestRedirect();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         String answer = req.getParameter("answer");
         if (answer.equals("decline")) {
             RequestDispatcher requestDispatcher = req.getRequestDispatcher("WEB-INF/losesPages/SecondLose.jsp");
